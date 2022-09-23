@@ -4,9 +4,10 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public Bread()
+    public int Number { get; set; }
+    public Bread(int number)
     {
-      Console.WriteLine("Alive");
+      Number = number;
     }
   }
 }
