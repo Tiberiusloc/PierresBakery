@@ -5,7 +5,7 @@ namespace PierresBakery.Models
   public class Bread
   {
     private static double _Price = 5;
-    private double _Discount;
+    private double _BreadDiscount;
     public int Quantity { get; set; }
     public static double Price
     {
@@ -16,7 +16,7 @@ namespace PierresBakery.Models
     {
       Quantity = quantity;
       _Price = Price;
-      _Discount = 0;
+      _BreadDiscount = 0;
     }
     public double BreadCost()
     {
@@ -29,7 +29,7 @@ namespace PierresBakery.Models
         }
         else if(i % 3 == 0 )
         {
-          breadTotal += _Price * _Discount;
+          breadTotal += _Price * _BreadDiscount;
         }
         else 
         {
