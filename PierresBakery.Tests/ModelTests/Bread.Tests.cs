@@ -34,5 +34,13 @@ namespace BreadTests.Tests
       int result = newBread.Quantity;
       Assert.AreEqual(newQuantity, result);
     }
+    [TestMethod]
+    public void BreadCost_BreadCostRegularPrice_Int()
+    {
+      int quantity = 2;
+      double breadCost = 10;
+      Bread newBread = new Bread(quantity);
+      Assert.AreEqual(breadCost, newBread.BreadCost());
+    }
   }
 }
