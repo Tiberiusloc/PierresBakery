@@ -18,5 +18,21 @@ namespace PierresBakery.Models
       _Price = Price;
       _PastryDiscount = 1;
     }
+    public double PastryCost()
+    {
+      double pastryTotal = 0;
+      for (int i = 0; i <= Quantity; i++)
+      {
+        if (i == 0)
+        {
+          pastryTotal += 0;
+        }
+        else
+        {
+          pastryTotal += _Price;
+        }
+      }
+      return pastryTotal;
+    }
   }
 }
