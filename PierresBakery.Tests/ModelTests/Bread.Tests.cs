@@ -46,9 +46,9 @@ namespace BreadTests.Tests
     public void BreadCost_ReturnBreadCostWithDeal_Int()
     {
       int quantity = 3;
-      //double breadCost = 10;
+      double breadCost = 10;
       Bread newBread = new Bread(quantity);
-      //Assert.AreEqual();
+      Assert.AreEqual(breadCost, newBread.BreadCost());
     }
   }
 }

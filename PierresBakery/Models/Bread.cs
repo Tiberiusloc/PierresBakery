@@ -27,6 +27,10 @@ namespace PierresBakery.Models
         {
           breadTotal += 0;
         }
+        else if(i % 3 == 0 )
+        {
+          breadTotal += _Price * _Discount;
+        }
         else 
         {
           breadTotal += _Price;
