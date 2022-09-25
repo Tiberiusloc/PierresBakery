@@ -39,5 +39,13 @@ namespace PastryTests.Tests
       Pastry newPastry = new Pastry(quantity);
       Assert.AreEqual(pastryCost, newPastry.PastryCost());
     }
+    [TestMethod]
+    public void PastryCost_ReturnPastryDealCost_Int()
+    {
+      int quantity = 3;
+      double pastryCost = 5;
+      Pastry newPastry = new Pastry(quantity);
+      Assert.AreEqual(pastryCost, newPastry.PastryCost());
+    }
   }
 }
